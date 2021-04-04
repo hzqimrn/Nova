@@ -1,0 +1,501 @@
+/* Variables */
+
+/* font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   min-height: 100vh;
+}
+
+.container-fluid {
+   padding: 0;
+}
+
+/* Header */
+
+#header {
+   height: min-content;
+   background: url("/blogr/images/bg-pattern-intro.svg"), 
+               linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+   background-position: 26.5% 51.5%;
+   padding: 2.3rem 5rem 8rem;
+   border-bottom-left-radius: 100px 100px;
+}
+
+.arrow-dark {
+   display: none;
+}
+
+button#navButton1:hover .arrow.reset {
+   transform: rotate(-180deg);
+}
+
+.icon {
+   display: none;
+}
+.icon.active {
+   display: block;
+   transition: .10s;
+}
+
+.navbar .btn{
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 400;
+   color: hsl(240, 4%, 91%);
+}
+
+.navbar .btn:hover {
+   text-decoration: underline;
+   color: white;
+}
+
+.navbar-brand {
+   padding-right: 3rem;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+   border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+button.btn:focus {
+   outline: none;
+   box-shadow: none;
+}
+
+.dropdown:hover .dropdown-menu {
+   display: block;
+}
+
+.dropdown-item a {
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 400;
+}
+
+.dropdown-menu > li > a:hover {
+   background-image: none;
+   background-color: white;
+   font-weight: 600;
+}
+
+.login-signup.mobile {
+   display: none;
+}
+
+.btn-s {
+   line-height: 1.5;
+   background: none;
+   padding: 12px 33px;
+   color: hsl(240, 4%, 91%);
+   margin: 0 .3rem;
+   margin-top: 1rem;
+   border: none;
+   border-radius: 25px;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 500;
+}
+
+.btn-s:hover {
+   background-color: white;
+   color: hsl(356, 100%, 66%);
+   border: none;
+   border-radius: 30px;
+}
+
+.btn-light {
+   background-color: white;
+   color: hsl(356, 100%, 66%);
+}
+
+.btn-light:hover {
+   background-color: #FF7B86;
+   color: white;
+   text-decoration: none;
+}
+
+.btn-title .btn-s {
+   padding: 12px 20px;
+}
+
+.btn-s.btn-learn {
+   border: 1px solid hsl(240, 4%, 91%);
+}
+
+.title {
+   color: white;
+   margin-top: 5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Overpass', sans-serif;
+   font-weight: 600;
+}
+
+.title h1 {
+   margin-top: 3rem;
+   font-size: 4rem;
+}
+
+.title h4 {
+   color: hsl(240, 4%, 91%);
+   font-weight: 300;
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 1.1rem;
+   margin: .6rem auto 2.4rem;
+}
+
+/*=== Body === */
+
+/* Content 1 */
+
+#body-content {
+   padding-top: 130px;
+   height: min-content;
+}
+
+.content-1 {
+   max-height: 55rem;
+}
+
+.header-1 {
+   margin-bottom: 90px;
+   text-align: center;
+   font-size: 36px;
+   font-family: 'Overpass', sans-serif;
+   font-weight: 600;
+   color: hsl(208, 49%, 24%);
+}
+
+.intro-main1 {
+   text-align: left;
+   padding-left: 140px;
+   padding-right: 26px;
+   line-height: 2;
+}
+
+.intro {
+   margin-bottom: 76px;
+}
+
+.intro h3, .intro-2 h3 {
+   margin-bottom: 30px;
+   font-family: 'Overpass', sans-serif;
+   font-weight: 600;
+   color: hsl(208, 49%, 24%);
+}
+
+.intro p, .intro-2 p {
+   font-family: 'Overpass', sans-serif;
+   color: hsl(207, 13%, 34%);
+   font-size: 16px;
+}
+
+.image-1-mobile {
+   display: none;
+}
+
+.chart {
+   position: relative;
+   top: -200px;
+   right: -20px;
+}
+
+/* Content 2 */
+
+.content-2 {
+   background: url("/blogr/images/bg-pattern-circles.svg"),
+               linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+   background-repeat: no-repeat;
+   background-position: -81% 81%;
+   border-bottom-left-radius: 100px 100px;
+   border-top-right-radius: 100px 100px;
+   max-height: 400px;
+}
+
+.intro-main2 {
+   padding: 119px 0;
+   padding-right: 155px;
+   line-height: 2;
+}
+
+.intro-3  h2 {
+   font-size: 36px;
+   font-family: 'Overpass', sans-serif;
+   font-weight: 600;
+   color: white;
+   margin-bottom: 25px;
+}
+
+.intro-3 p {
+   font-family: 'Overpass', sans-serif;
+   font-weight: 300;
+   color: hsl(240, 2%, 79%);
+   font-size: 16px;
+}
+
+.image-2 {
+   padding-right: 30px;
+}
+
+.phones {
+   position: relative;
+   top: -67px;
+   left: 65px;
+}
+
+/* Content 3 */
+.content-3 {
+   padding: 100px 0;
+}
+
+.laptop {
+   position: relative;
+   left: -270px;
+}
+
+.intro-main3 {
+   padding: 165px 0;
+   padding-right: 90px;
+   line-height: 2;
+}
+
+.intro-4 {
+   margin-bottom: 76px;
+}
+
+.intro-4 h3, .intro-5 h3 {
+   margin-bottom: 30px;
+   font-family: 'Overpass', sans-serif;
+   font-weight: 600;
+   color: hsl(208, 49%, 24%);
+}
+
+.intro-4 p, .intro-5 p {
+   font-family: 'Overpass', sans-serif;
+   color: hsl(207, 13%, 34%);
+   font-size: 16px;
+}
+
+.image-3 .laptop-mobile {
+   display: none;
+}
+
+/* Footer */
+
+#footer {
+   height: min-content;
+   background-color: hsl(240, 10%, 16%);
+   padding: 65px 140px;
+   text-align: center;
+   border-top-right-radius: 100px 100px;
+}
+
+.footer-details {
+   color: white;
+   text-align: left;
+}
+
+.foot-product-title {
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 400;
+   margin-bottom: 30px;
+}
+
+.foot-product {
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 300;
+   color:  hsl(240, 2%, 79%);
+   display: flex;
+   flex-direction: column;
+   text-decoration: none;
+   margin-bottom: 15px;
+}
+
+.foot-product:hover {
+   color: hsl(240, 2%, 79%);
+   text-decoration: underline;
+}
+
+/* Mobile responsive */
+
+@media screen and (max-width: 1020px) {
+   /* Header */
+   #header {
+      padding: 36px 20px 160px;
+   }
+
+   #navToggler {
+      background-color: white;
+      border-radius: 4px;
+      text-align: center;
+   }
+   
+   button#navButton1 {
+      font-family: 'Overpass', sans-serif;
+      font-weight: 400;
+      color: black;
+   }
+   button#navButton1:hover {
+      text-decoration: none;
+      color: #4B637B;
+   }
+
+   .arrow {
+      display: none;
+   }
+   .arrow-dark {
+      display:inline-block;
+      margin-left: 5px;
+   }
+   button#navButton1:hover .arrow-dark.reset {
+      transform: rotate(-180deg);
+   }
+
+   .title {
+      padding: 0 40px;
+   }
+   .title h1 {
+      font-size: 40px;
+      text-align: center;
+   }
+   .title h4 {
+      text-align: center;
+   }
+
+   .login-signup {
+      display: none;
+   }
+
+   .dropdown-menu {
+      margin-left: 10%;
+      width: 80%;
+      position: relative;
+      border: none;
+      text-align: center;
+      background-color: #EFEFF1;
+   }
+   .dropdown-item {
+      color: #4B637B;
+      font-weight: 600;
+   }
+   .dropdown-menu > li > a:hover {
+      background: none;
+   }
+
+   .login-signup.mobile {
+      margin: 20px auto;
+      margin-left: 5%;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px solid #EFEFF1;
+   }
+   .login-signup.mobile > .btn-nav .btn-s {
+      text-align: center;    
+      display: block;
+      margin: 5px 0;
+   }
+   .login-signup.mobile > .btn-nav .btn-s {
+      color: black;
+   }
+   .login-signup.mobile > .btn-nav .btn-s.btn-light {
+      color: white;
+      background: linear-gradient(90deg, hsl(355, 100%, 74%), hsl(356, 100%, 66%));
+   }
+
+   /* Content */
+
+   .content-1 {
+      max-height: min-content;
+      margin-bottom: 30px;
+   }
+
+   .image-1-mobile {
+      display: block;
+      text-align: center;
+      margin-bottom: 45px;
+   }
+   .image-1 {
+      display: none;
+   }
+
+   .header-1 {
+      margin-bottom: 45px;
+   }
+
+   .intro-main1 {
+      text-align: center;
+      padding: 0 6.5625rem;
+   }
+   .intro h3 {
+      font-size: 30px;
+   }
+   .intro-2 h3 {
+      font-size: 30px;
+   }
+
+   /* Content 2 */
+
+   .content-2 {
+      background-size: contain;
+      background-position: 50% -43%;
+      max-height: min-content;
+      text-align: center;
+      margin-top: 18.125rem;
+   }
+
+   .intro-main2 {
+      padding: 70px 105px;
+   }
+
+   .image-2 {
+      max-height: 15.875rem;
+      padding: 0;
+   }
+   .phones {
+      position: relative;
+      top: -265px;
+      left: -23px;
+   }
+
+   /* Content 3 */
+
+   .intro-main3 {
+      padding: 0 103px;
+      text-align: center;
+   }
+
+   .intro-4 h3, .intro-5 h3 {
+      font-size: 30px;
+   } 
+
+   .image-3 .laptop {
+      display: none;
+   }
+   .image-3 .laptop-mobile {
+      display: block;
+      margin-bottom: 50px;
+      align-items: center;
+   }
+
+   /* Footer */
+
+   .footer-details {
+      text-align: center;
+   }
+
+   .foot-product-title {
+      margin-top: 60px;
+   }
+}
